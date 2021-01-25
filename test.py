@@ -12,9 +12,19 @@ def area_circle(r):
        
     Outputs:
        :param float area: area of circle
-       
-    Best function ever
     '''
     return np.pi*r**2
 
-print('hello world')
+def area_triangle(base, height): 
+    '''
+    This function computes the area of a triangle, given its base length and height
+    
+    Inputs:
+       :param float base: base length of the triangle
+       :param float height: height of the triangle
+       
+    Outputs:
+       :param float area: area of triangle
+    '''
+    return 1/2*base*height
+
