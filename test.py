@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 
 def circumference_circle(r):
     return 2*np.pi*r
@@ -28,3 +29,8 @@ def area_triangle(base, height):
     '''
     return 1/2*base*height
 
+def plot_circle(r):
+    theta = np.linspace(0, 2*np.pi,1000)
+    fig, ax = plt.subplots()
+    ax.plot(r*np.cos(theta), r*np.sin(theta))
+    return fig, ax

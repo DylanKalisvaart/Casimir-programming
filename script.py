@@ -1,4 +1,5 @@
 import test
+import matplotlib.pyplot as plt
 
 print('some print statement')
 
@@ -8,3 +9,7 @@ area = test.area_circle(r)
 
 print('Circumference: ', circumference)
 print('Area: ', area)
+
+r = 2
+fig, ax = test.plot_circle(r)
+plt.savefig('circle.png')
